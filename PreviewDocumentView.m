@@ -123,11 +123,6 @@ static bool buildProgram(GLuint program)
     return [super initWithFrame:frameRect pixelFormat:format];
 }
 
-- (void)dealloc
-{
-    self.mixerId = nil;
-}
-
 - (NSString *)mixerId
 {
     return _mixerId;
@@ -135,15 +130,28 @@ static bool buildProgram(GLuint program)
 
 - (void)setMixerId:(NSString *)mixerId
 {
-    [_client destroy];
-    _client = nil;
+    if ([mixerId isEqualToString:_mixerId])
+        return;
 
     _mixerId = mixerId;
+    [self updateClient];
+}
 
-    if (_mixerId) {
-        // Create the preview service client.
+- (void)viewDidMoveToSuperview
+{
+    [self updateClient];
+}
+
+// Create the preview service client.
+- (void)updateClient
+{
+    if (self.mixerId && self.superview) {
         _client = [[PreviewClient alloc] initWithMixerId:_mixerId];
         _client.delegate = self;
+    }
+    else {
+        [_client destroy];
+        _client = nil;
     }
 }
 
@@ -223,7 +231,6 @@ static bool buildProgram(GLuint program)
             NSLog(@"CGLTexImageIOSurface2D error 0x%x", cglRet);
         }
     }
-
 }
 
 - (void)clearGLContext
