@@ -1,8 +1,7 @@
 #import <Cocoa/Cocoa.h>
 #import <WebKit/WebKit.h>
-#import "PreviewClient.h"
 
-@interface PreviewDocumentView : NSOpenGLView <WebDocumentView, PreviewClientDelegate>
+@interface PreviewDocumentView : NSOpenGLView <WebDocumentView>
 
 @property (nonatomic) NSString *mixerId;
 
