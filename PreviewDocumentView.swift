@@ -7,62 +7,62 @@ class PreviewDocumentView: NSView, WebDocumentView {
 
     var mixerId: String? {
         didSet {
-            updatePreviewMixerId();
+            updatePreviewMixerId()
         }
     }
 
     required init?(coder: NSCoder) {
-        super.init(coder: coder);
-        setupPreviewLayer();
+        super.init(coder: coder)
+        setupPreviewLayer()
     }
 
     override init() {
-        super.init();
-        setupPreviewLayer();
+        super.init()
+        setupPreviewLayer()
     }
 
     override init(frame frameRect: NSRect) {
-        super.init(frame: frameRect);
-        setupPreviewLayer();
+        super.init(frame: frameRect)
+        setupPreviewLayer()
     }
 
     func setupPreviewLayer() {
-        layer = previewLayer;
-        wantsLayer = true;
+        layer = previewLayer
+        wantsLayer = true
     }
 
     override func viewDidMoveToSuperview() {
-        updatePreviewMixerId();
-        needsLayout = true;
+        updatePreviewMixerId()
+        needsLayout = true
     }
 
     override func resizeWithOldSuperviewSize(oldSize: NSSize) {
-        needsLayout = true;
+        needsLayout = true
     }
 
     func updatePreviewMixerId() {
-        previewLayer.mixerId = superview != nil ? mixerId : nil;
+        previewLayer.mixerId = superview != nil ? mixerId : nil
     }
 
     func setNeedsLayout(flag: Bool) {
-        super.needsLayout = flag;
+        super.needsLayout = flag
     }
 
     override func layout() {
-        let size = self.superview!.bounds.size;
-        let newFrame = NSMakeRect(0, 0, size.width, size.height);
+        let size = self.superview!.bounds.size
+        let newFrame = NSMakeRect(0, 0, size.width, size.height)
 
-        frame = newFrame;
-        previewLayer.frame = newFrame;
+        frame = newFrame
+        previewLayer.frame = newFrame
 
-        super.layout();
+        super.layout()
     }
 
     func setDataSource(dataSource: WebDataSource!) {
     }
 
     func dataSourceUpdated(dataSource: WebDataSource!) {
-        mixerId = NSString(data: dataSource.data, encoding: NSUTF8StringEncoding);
+        mixerId = NSString(data: dataSource.data, encoding: NSUTF8StringEncoding)
     }
 
     func viewWillMoveToHostWindow(hostWindow: NSWindow!) {

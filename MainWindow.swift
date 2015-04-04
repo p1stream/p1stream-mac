@@ -19,7 +19,7 @@ class MainWindow: NSWindowController, NSWindowDelegate {
     }
 
     override func windowDidLoad() {
-        webView.customUserAgent = "p1stream-mac";
+        webView.customUserAgent = "p1stream-mac"
     }
 
     func windowWillClose(notification: NSNotification) {
