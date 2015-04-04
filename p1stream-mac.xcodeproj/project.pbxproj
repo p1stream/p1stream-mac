@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F644418E1A987CBD00C607A3 /* PreviewDocumentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F644418D1A987CBD00C607A3 /* PreviewDocumentView.m */; };
 		F66B5A9C1A86421B00867250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A9B1A86421B00867250 /* AppDelegate.swift */; };
 		F66B5AB71A86499100867250 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F66B5AB61A86499100867250 /* WebKit.framework */; };
 		F66B5AC21A8656B400867250 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AC01A8656B400867250 /* MainWindow.swift */; };
 		F66B5AC31A8656B400867250 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66B5AC11A8656B400867250 /* MainWindow.xib */; };
+		F6919B761AD01FEB0039130C /* PreviewDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6919B751AD01FEB0039130C /* PreviewDocumentView.swift */; };
 		F6935C851A9D264B002BBCD3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6935C841A9D264B002BBCD3 /* MainMenu.xib */; };
 		F69D726D1ACF57A000E1BA5A /* PreviewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F69D726C1ACF57A000E1BA5A /* PreviewLayer.m */; };
 		F6C3642B1A99591C00FF453F /* PreviewDocumentRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3642A1A99591C00FF453F /* PreviewDocumentRepresentation.swift */; };
@@ -22,14 +22,13 @@
 
 /* Begin PBXFileReference section */
 		F644418B1A987CBD00C607A3 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
-		F644418C1A987CBD00C607A3 /* PreviewDocumentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewDocumentView.h; sourceTree = "<group>"; };
-		F644418D1A987CBD00C607A3 /* PreviewDocumentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewDocumentView.m; sourceTree = "<group>"; };
 		F66B5A961A86421B00867250 /* p1stream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = p1stream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66B5A9A1A86421B00867250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F66B5A9B1A86421B00867250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F66B5AB61A86499100867250 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F66B5AC01A8656B400867250 /* MainWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
 		F66B5AC11A8656B400867250 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		F6919B751AD01FEB0039130C /* PreviewDocumentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewDocumentView.swift; sourceTree = "<group>"; };
 		F6935C841A9D264B002BBCD3 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		F6935CAF1A9D2F77002BBCD3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F69D726B1ACF57A000E1BA5A /* PreviewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewLayer.h; sourceTree = "<group>"; };
@@ -66,8 +65,7 @@
 				F66B5AC11A8656B400867250 /* MainWindow.xib */,
 				F66B5AC01A8656B400867250 /* MainWindow.swift */,
 				F6C3642A1A99591C00FF453F /* PreviewDocumentRepresentation.swift */,
-				F644418C1A987CBD00C607A3 /* PreviewDocumentView.h */,
-				F644418D1A987CBD00C607A3 /* PreviewDocumentView.m */,
+				F6919B751AD01FEB0039130C /* PreviewDocumentView.swift */,
 				F69D726B1ACF57A000E1BA5A /* PreviewLayer.h */,
 				F69D726C1ACF57A000E1BA5A /* PreviewLayer.m */,
 				F6CB3D731A98BB6800AD7844 /* PreviewClient.h */,
@@ -180,12 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6919B761AD01FEB0039130C /* PreviewDocumentView.swift in Sources */,
 				F66B5A9C1A86421B00867250 /* AppDelegate.swift in Sources */,
 				F69D726D1ACF57A000E1BA5A /* PreviewLayer.m in Sources */,
 				F6F510B21A86835D00AF827E /* ServerTask.swift in Sources */,
 				F66B5AC21A8656B400867250 /* MainWindow.swift in Sources */,
 				F6CB3D751A98BB6800AD7844 /* PreviewClient.m in Sources */,
-				F644418E1A987CBD00C607A3 /* PreviewDocumentView.m in Sources */,
 				F6C3642B1A99591C00FF453F /* PreviewDocumentRepresentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
