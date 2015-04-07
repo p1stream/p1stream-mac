@@ -82,16 +82,11 @@
 		F66B5A8D1A86421B00867250 = {
 			isa = PBXGroup;
 			children = (
-				F6935CAF1A9D2F77002BBCD3 /* README.md */,
-				F66B5A9A1A86421B00867250 /* Info.plist */,
-				F6935C841A9D264B002BBCD3 /* MainMenu.xib */,
-				F66B5A9B1A86421B00867250 /* AppDelegate.swift */,
-				F6F510B11A86835D00AF827E /* ServerTask.swift */,
-				F66B5AC11A8656B400867250 /* MainWindow.xib */,
-				F66B5AC01A8656B400867250 /* MainWindow.swift */,
+				F6ABF6AB1AD471B10061DB5B /* App */,
 				F6ABF69A1AD456E50061DB5B /* PreviewPlugin */,
 				F6ABB9271A9D1389007A4C36 /* Frameworks */,
 				F66B5A971A86421B00867250 /* Products */,
+				F6935CAF1A9D2F77002BBCD3 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +121,19 @@
 				F6CB3D741A98BB6800AD7844 /* PreviewClient.m */,
 			);
 			path = PreviewPlugin;
+			sourceTree = "<group>";
+		};
+		F6ABF6AB1AD471B10061DB5B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F66B5A9A1A86421B00867250 /* Info.plist */,
+				F6935C841A9D264B002BBCD3 /* MainMenu.xib */,
+				F66B5A9B1A86421B00867250 /* AppDelegate.swift */,
+				F6F510B11A86835D00AF827E /* ServerTask.swift */,
+				F66B5AC11A8656B400867250 /* MainWindow.xib */,
+				F66B5AC01A8656B400867250 /* MainWindow.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +342,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -346,7 +354,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
