@@ -20,20 +20,6 @@
                ReferencedContainer = "container:p1stream-mac.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F66B5AA51A86421B00867250"
-               BuildableName = "p1stream-macTests.xctest"
-               BlueprintName = "p1stream-macTests"
-               ReferencedContainer = "container:p1stream-mac.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -42,16 +28,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F66B5AA51A86421B00867250"
-               BuildableName = "p1stream-macTests.xctest"
-               BlueprintName = "p1stream-macTests"
-               ReferencedContainer = "container:p1stream-mac.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
