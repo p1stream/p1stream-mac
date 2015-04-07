@@ -23,9 +23,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <webView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E6p-bE-hFk">
+                    <webView translatesAutoresizingMaskIntoConstraints="NO" id="E6p-bE-hFk">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
-                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" plugInsEnabled="NO" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
+                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
                             <nil key="identifier"/>
                         </webPreferences>
                     </webView>

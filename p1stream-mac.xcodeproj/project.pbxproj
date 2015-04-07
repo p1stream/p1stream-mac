@@ -11,29 +11,46 @@
 		F66B5AB71A86499100867250 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F66B5AB61A86499100867250 /* WebKit.framework */; };
 		F66B5AC21A8656B400867250 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AC01A8656B400867250 /* MainWindow.swift */; };
 		F66B5AC31A8656B400867250 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66B5AC11A8656B400867250 /* MainWindow.xib */; };
-		F6919B761AD01FEB0039130C /* PreviewDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6919B751AD01FEB0039130C /* PreviewDocumentView.swift */; };
 		F6935C851A9D264B002BBCD3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6935C841A9D264B002BBCD3 /* MainMenu.xib */; };
-		F69D726D1ACF57A000E1BA5A /* PreviewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F69D726C1ACF57A000E1BA5A /* PreviewLayer.m */; };
-		F6C3642B1A99591C00FF453F /* PreviewDocumentRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3642A1A99591C00FF453F /* PreviewDocumentRepresentation.swift */; };
-		F6CB3D751A98BB6800AD7844 /* PreviewClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CB3D741A98BB6800AD7844 /* PreviewClient.m */; };
-		F6CB3D771A98BBD600AD7844 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6CB3D761A98BBD600AD7844 /* IOSurface.framework */; };
+		F6ABF6A01AD457360061DB5B /* PreviewClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CB3D741A98BB6800AD7844 /* PreviewClient.m */; };
+		F6ABF6A11AD4573B0061DB5B /* PreviewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F69D726C1ACF57A000E1BA5A /* PreviewLayer.m */; };
+		F6ABF6A31AD457C40061DB5B /* PreviewEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ABF6A21AD457C40061DB5B /* PreviewEntry.m */; };
+		F6ABF6A51AD45BFC0061DB5B /* PreviewPlugin.plugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = F6ABF6991AD456E40061DB5B /* PreviewPlugin.plugin */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6ABF6A61AD46B5F0061DB5B /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6CB3D761A98BBD600AD7844 /* IOSurface.framework */; };
+		F6ABF6A81AD46B7A0061DB5B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6ABF6A71AD46B7A0061DB5B /* QuartzCore.framework */; };
+		F6ABF6AA1AD46B900061DB5B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6ABF6A91AD46B900061DB5B /* OpenGL.framework */; };
 		F6F510B21A86835D00AF827E /* ServerTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F510B11A86835D00AF827E /* ServerTask.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F6ABF6A41AD45BF10061DB5B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F6ABF6A51AD45BFC0061DB5B /* PreviewPlugin.plugin in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		F644418B1A987CBD00C607A3 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		F66B5A961A86421B00867250 /* p1stream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = p1stream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66B5A9A1A86421B00867250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F66B5A9B1A86421B00867250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F66B5AB61A86499100867250 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F66B5AC01A8656B400867250 /* MainWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
 		F66B5AC11A8656B400867250 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		F6919B751AD01FEB0039130C /* PreviewDocumentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewDocumentView.swift; sourceTree = "<group>"; };
 		F6935C841A9D264B002BBCD3 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		F6935CAF1A9D2F77002BBCD3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F69D726B1ACF57A000E1BA5A /* PreviewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewLayer.h; sourceTree = "<group>"; };
 		F69D726C1ACF57A000E1BA5A /* PreviewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewLayer.m; sourceTree = "<group>"; };
-		F6C3642A1A99591C00FF453F /* PreviewDocumentRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewDocumentRepresentation.swift; sourceTree = "<group>"; };
+		F6ABF6991AD456E40061DB5B /* PreviewPlugin.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreviewPlugin.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6ABF69C1AD456E50061DB5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6ABF6A21AD457C40061DB5B /* PreviewEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewEntry.m; sourceTree = "<group>"; };
+		F6ABF6A71AD46B7A0061DB5B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F6ABF6A91AD46B900061DB5B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		F6CB3D731A98BB6800AD7844 /* PreviewClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewClient.h; sourceTree = "<group>"; };
 		F6CB3D741A98BB6800AD7844 /* PreviewClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewClient.m; sourceTree = "<group>"; };
 		F6CB3D761A98BBD600AD7844 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
@@ -45,8 +62,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6CB3D771A98BBD600AD7844 /* IOSurface.framework in Frameworks */,
 				F66B5AB71A86499100867250 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6ABF6961AD456E40061DB5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6ABF6A81AD46B7A0061DB5B /* QuartzCore.framework in Frameworks */,
+				F6ABF6AA1AD46B900061DB5B /* OpenGL.framework in Frameworks */,
+				F6ABF6A61AD46B5F0061DB5B /* IOSurface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,18 +84,12 @@
 			children = (
 				F6935CAF1A9D2F77002BBCD3 /* README.md */,
 				F66B5A9A1A86421B00867250 /* Info.plist */,
-				F644418B1A987CBD00C607A3 /* BridgingHeader.h */,
 				F6935C841A9D264B002BBCD3 /* MainMenu.xib */,
 				F66B5A9B1A86421B00867250 /* AppDelegate.swift */,
 				F6F510B11A86835D00AF827E /* ServerTask.swift */,
 				F66B5AC11A8656B400867250 /* MainWindow.xib */,
 				F66B5AC01A8656B400867250 /* MainWindow.swift */,
-				F6C3642A1A99591C00FF453F /* PreviewDocumentRepresentation.swift */,
-				F6919B751AD01FEB0039130C /* PreviewDocumentView.swift */,
-				F69D726B1ACF57A000E1BA5A /* PreviewLayer.h */,
-				F69D726C1ACF57A000E1BA5A /* PreviewLayer.m */,
-				F6CB3D731A98BB6800AD7844 /* PreviewClient.h */,
-				F6CB3D741A98BB6800AD7844 /* PreviewClient.m */,
+				F6ABF69A1AD456E50061DB5B /* PreviewPlugin */,
 				F6ABB9271A9D1389007A4C36 /* Frameworks */,
 				F66B5A971A86421B00867250 /* Products */,
 			);
@@ -79,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				F66B5A961A86421B00867250 /* p1stream.app */,
+				F6ABF6991AD456E40061DB5B /* PreviewPlugin.plugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,10 +107,25 @@
 		F6ABB9271A9D1389007A4C36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F6ABF6A91AD46B900061DB5B /* OpenGL.framework */,
+				F6ABF6A71AD46B7A0061DB5B /* QuartzCore.framework */,
 				F6CB3D761A98BBD600AD7844 /* IOSurface.framework */,
 				F66B5AB61A86499100867250 /* WebKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6ABF69A1AD456E50061DB5B /* PreviewPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				F6ABF69C1AD456E50061DB5B /* Info.plist */,
+				F6ABF6A21AD457C40061DB5B /* PreviewEntry.m */,
+				F69D726B1ACF57A000E1BA5A /* PreviewLayer.h */,
+				F69D726C1ACF57A000E1BA5A /* PreviewLayer.m */,
+				F6CB3D731A98BB6800AD7844 /* PreviewClient.h */,
+				F6CB3D741A98BB6800AD7844 /* PreviewClient.m */,
+			);
+			path = PreviewPlugin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +139,7 @@
 				F66B5A931A86421B00867250 /* Frameworks */,
 				F66B5A941A86421B00867250 /* Resources */,
 				F6935C831A9D1C1A002BBCD3 /* ShellScript */,
+				F6ABF6A41AD45BF10061DB5B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -112,6 +149,23 @@
 			productName = "p1stream-mac";
 			productReference = F66B5A961A86421B00867250 /* p1stream.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F6ABF6981AD456E40061DB5B /* PreviewPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6ABF69F1AD456E50061DB5B /* Build configuration list for PBXNativeTarget "PreviewPlugin" */;
+			buildPhases = (
+				F6ABF6951AD456E40061DB5B /* Sources */,
+				F6ABF6961AD456E40061DB5B /* Frameworks */,
+				F6ABF6971AD456E40061DB5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PreviewPlugin;
+			productName = PreviewPlugin;
+			productReference = F6ABF6991AD456E40061DB5B /* PreviewPlugin.plugin */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -124,6 +178,9 @@
 				TargetAttributes = {
 					F66B5A951A86421B00867250 = {
 						CreatedOnToolsVersion = 6.1.1;
+					};
+					F6ABF6981AD456E40061DB5B = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -141,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				F66B5A951A86421B00867250 /* p1stream */,
+				F6ABF6981AD456E40061DB5B /* PreviewPlugin */,
 			);
 		};
 /* End PBXProject section */
@@ -152,6 +210,13 @@
 			files = (
 				F6935C851A9D264B002BBCD3 /* MainMenu.xib in Resources */,
 				F66B5AC31A8656B400867250 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6ABF6971AD456E40061DB5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,13 +243,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6919B761AD01FEB0039130C /* PreviewDocumentView.swift in Sources */,
 				F66B5A9C1A86421B00867250 /* AppDelegate.swift in Sources */,
-				F69D726D1ACF57A000E1BA5A /* PreviewLayer.m in Sources */,
 				F6F510B21A86835D00AF827E /* ServerTask.swift in Sources */,
 				F66B5AC21A8656B400867250 /* MainWindow.swift in Sources */,
-				F6CB3D751A98BB6800AD7844 /* PreviewClient.m in Sources */,
-				F6C3642B1A99591C00FF453F /* PreviewDocumentRepresentation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6ABF6951AD456E40061DB5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6ABF6A31AD457C40061DB5B /* PreviewEntry.m in Sources */,
+				F6ABF6A11AD4573B0061DB5B /* PreviewLayer.m in Sources */,
+				F6ABF6A01AD457360061DB5B /* PreviewClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +337,6 @@
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = BridgingHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -279,7 +349,30 @@
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = BridgingHeader.h;
+			};
+			name = Release;
+		};
+		F6ABF69D1AD456E50061DB5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = PreviewPlugin/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		F6ABF69E1AD456E50061DB5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PreviewPlugin/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = plugin;
 			};
 			name = Release;
 		};
@@ -303,6 +396,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		F6ABF69F1AD456E50061DB5B /* Build configuration list for PBXNativeTarget "PreviewPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6ABF69D1AD456E50061DB5B /* Debug */,
+				F6ABF69E1AD456E50061DB5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

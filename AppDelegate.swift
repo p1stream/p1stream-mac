@@ -8,12 +8,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private let mainWindow = MainWindow(windowNibName: "MainWindow")
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        WebView.registerViewClass(
-            PreviewDocumentView.self,
-            representationClass: PreviewDocumentRepresentation.self,
-            forMIMEType: "application/x-p1stream-preview"
-        )
-
         NSNotificationCenter.defaultCenter().addObserver(
             self,
             selector: "onTaskMessage:",
