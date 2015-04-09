@@ -36,7 +36,7 @@ class ServerTask: NSObject {
 
     func onReadCompletion(aNotification: NSNotification) {
         let info = aNotification.userInfo!
-        if let error = info["NSFileHandleError"] as NSNumber? {
+        if let error = info["NSFileHandleError"] as! NSNumber? {
             println("Child process stdout read error: \(error)")
         } else if let data = info[NSFileHandleNotificationDataItem] as? NSData {
             if data.length != 0 {

@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F66B5A951A86421B00867250"
-               BuildableName = "p1stream.app"
-               BlueprintName = "p1stream"
+               BuildableName = "P1stream.app"
+               BlueprintName = "P1stream"
                ReferencedContainer = "container:p1stream-mac.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F66B5A951A86421B00867250"
-            BuildableName = "p1stream.app"
-            BlueprintName = "p1stream"
+            BuildableName = "P1stream.app"
+            BlueprintName = "P1stream"
             ReferencedContainer = "container:p1stream-mac.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -53,8 +53,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F66B5A951A86421B00867250"
-            BuildableName = "p1stream.app"
-            BlueprintName = "p1stream"
+            BuildableName = "P1stream.app"
+            BlueprintName = "P1stream"
             ReferencedContainer = "container:p1stream-mac.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -72,8 +72,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F66B5A951A86421B00867250"
-            BuildableName = "p1stream.app"
-            BlueprintName = "p1stream"
+            BuildableName = "P1stream.app"
+            BlueprintName = "P1stream"
             ReferencedContainer = "container:p1stream-mac.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

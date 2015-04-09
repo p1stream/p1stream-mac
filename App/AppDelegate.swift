@@ -32,11 +32,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func onTaskMessage(aNotification: NSNotification) {
         let info = aNotification.userInfo!
-        let msg = info["ServerTaskMessageContents"] as [String: AnyObject]
-        switch msg["t"] as String {
+        let msg = info["ServerTaskMessageContents"] as! [String: AnyObject]
+        switch msg["t"] as! String {
             case "started":
-                let value = msg["v"] as [String: AnyObject]
-                let url = value["url"] as String
+                let value = msg["v"] as! [String: AnyObject]
+                let url = value["url"] as! String
                 mainWindow.startUrl = NSURL(string: url)
                 mainWindow.showWindow(nil)
             default:

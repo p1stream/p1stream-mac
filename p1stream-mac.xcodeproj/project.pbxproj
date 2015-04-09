@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -36,14 +36,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F66B5A961A86421B00867250 /* p1stream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = p1stream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F66B5A961A86421B00867250 /* P1stream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P1stream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66B5A9A1A86421B00867250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F66B5A9B1A86421B00867250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F66B5A9B1A86421B00867250 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F66B5AB61A86499100867250 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F66B5AC01A8656B400867250 /* MainWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
 		F66B5AC11A8656B400867250 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		F6935C841A9D264B002BBCD3 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
-		F6935CAF1A9D2F77002BBCD3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F6935CAF1A9D2F77002BBCD3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F69D726B1ACF57A000E1BA5A /* PreviewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewLayer.h; sourceTree = "<group>"; };
 		F69D726C1ACF57A000E1BA5A /* PreviewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewLayer.m; sourceTree = "<group>"; };
 		F6ABF6991AD456E40061DB5B /* PreviewPlugin.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreviewPlugin.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +93,7 @@
 		F66B5A971A86421B00867250 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F66B5A961A86421B00867250 /* p1stream.app */,
+				F66B5A961A86421B00867250 /* P1stream.app */,
 				F6ABF6991AD456E40061DB5B /* PreviewPlugin.plugin */,
 			);
 			name = Products;
@@ -139,9 +139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F66B5A951A86421B00867250 /* p1stream */ = {
+		F66B5A951A86421B00867250 /* P1stream */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F66B5AB01A86421B00867250 /* Build configuration list for PBXNativeTarget "p1stream" */;
+			buildConfigurationList = F66B5AB01A86421B00867250 /* Build configuration list for PBXNativeTarget "P1stream" */;
 			buildPhases = (
 				F66B5A921A86421B00867250 /* Sources */,
 				F66B5A931A86421B00867250 /* Frameworks */,
@@ -153,9 +153,9 @@
 			);
 			dependencies = (
 			);
-			name = p1stream;
+			name = P1stream;
 			productName = "p1stream-mac";
-			productReference = F66B5A961A86421B00867250 /* p1stream.app */;
+			productReference = F66B5A961A86421B00867250 /* P1stream.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F6ABF6981AD456E40061DB5B /* PreviewPlugin */ = {
@@ -193,7 +193,7 @@
 				};
 			};
 			buildConfigurationList = F66B5A911A86421B00867250 /* Build configuration list for PBXProject "p1stream-mac" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -205,7 +205,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F66B5A951A86421B00867250 /* p1stream */,
+				F66B5A951A86421B00867250 /* P1stream */,
 				F6ABF6981AD456E40061DB5B /* PreviewPlugin */,
 			);
 		};
@@ -345,7 +345,6 @@
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -396,7 +395,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F66B5AB01A86421B00867250 /* Build configuration list for PBXNativeTarget "p1stream" */ = {
+		F66B5AB01A86421B00867250 /* Build configuration list for PBXNativeTarget "P1stream" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F66B5AB11A86421B00867250 /* Debug */,
@@ -412,6 +411,7 @@
 				F6ABF69E1AD456E50061DB5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
